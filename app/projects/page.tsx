@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Navbar } from "../components/Navbar";
 import CodeIcon from "../../public/assets/code_icon.svg";
 import Image from "next/image";
@@ -86,7 +86,7 @@ const projectsData = [
 export default function Projects() {
   // State management
   const [activeProjectId, setActiveProjectId] = useState(1);
-  const [hoveredId, setHoveredId] = useState(null);
+  const [hoveredId, setHoveredId] = useState<number | null>(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [prevProjectId, setPrevProjectId] = useState(1);
   
@@ -95,7 +95,7 @@ export default function Projects() {
   const prevProject = projectsData.find(p => p.id === prevProjectId) || projectsData[0];
 
   // Handle project selection with transition
-  const handleProjectClick = (id) => {
+  const handleProjectClick = (id: number) => {
     if (id !== activeProjectId) {
       setIsTransitioning(true);
       setPrevProjectId(activeProjectId);
@@ -112,7 +112,7 @@ export default function Projects() {
     }
   };
 
-  const handleMouseEnter = (id) => {
+  const handleMouseEnter = (id: number) => {
     setHoveredId(id);
   };
 

@@ -41,7 +41,7 @@ export function Hero() {
 
 
                         <div className="hidden lg:block">
-                            <h1 className="font-medium text-[15px] text-[#333333]">Hi, I'm Venu</h1>
+                            <h1 className="font-medium text-[15px] text-[#333333]">Hi, I&apos;m Venu</h1>
                             <p className="mt-5 text-[#767676]">Born and raised in Bern, Switzerland,</p>
                             <p className="text-[#767676]">I am a Software Engineer/ Developer</p>
                             <p className="text-[#767676]">and UI/ UX Designer.</p>
