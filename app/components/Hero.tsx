@@ -1,10 +1,17 @@
+'use client';
+
 import Image from "next/image";
-import HeroImage from "../../public/assets/portfolio_Hero.svg";
+import dynamic from "next/dynamic";
 import LinkedInIcon from "../../public/assets/2linkedIn_icon.svg";
 import BehanceIcon from "../../public/assets/Behance_icon.svg";
 import GitHubIcon from "../../public/assets/GitHub_icon.svg";
 import ArrowDownIcon from "../../public/assets/arrow-down-s-line_icon.svg";
 import Link from "next/link";
+
+const ParallaxHero = dynamic(
+  () => import("./ParallaxHero").then((m) => m.ParallaxHero),
+  { ssr: false }
+);
 
 export function Hero() {
     return (
@@ -13,7 +20,9 @@ export function Hero() {
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between lg:mx-12 lg:mt-[140px]">
 
                 <div className="mt-[300px] lg:mt-[0px] lg:flex-1 lg:pl-[100px]">
-                    <Image src={HeroImage} alt="HeroImage" className="lg:w-[700px] lg:h-[700px]" />
+                    <div className="lg:w-[700px] lg:h-[700px] w-full h-[400px]">
+                        <ParallaxHero />
+                    </div>
                 </div>
 
 
