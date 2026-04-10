@@ -52,26 +52,20 @@ export function Hero() {
                         <div className="pt-14 mx-0 flex justify-between items-center lg:mx-0 lg:pt-2 lg:flex-col lg:space-y-6">
 
                             <div>
-                            <Link href="https://www.linkedin.com/in/venurshan-manivannan-034592231/" passHref legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer">
+                            <Link href="https://www.linkedin.com/in/venurshan-manivannan-034592231/" target="_blank" rel="noopener noreferrer">
                                 <Image src={LinkedInIcon} alt="LinkedIn" />
-                                </a>
                             </Link>
                             </div>
 
                             <div>
-                            <Link href="https://www.behance.net/venurshmanivan" passHref legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer">
+                            <Link href="https://www.behance.net/venurshmanivan" target="_blank" rel="noopener noreferrer">
                                 <Image src={BehanceIcon} alt="Behance" />
-                                </a>
                             </Link>
                             </div>
 
                             <div>
-                            <Link href="https://github.com/venu21-dev" passHref legacyBehavior>
-                                <a target="_blank" rel="noopener noreferrer">
+                            <Link href="https://github.com/venu21-dev" target="_blank" rel="noopener noreferrer">
                                 <Image src={GitHubIcon} alt="GitHub" />
-                                </a>
                             </Link>
                             </div>
 
